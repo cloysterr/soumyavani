@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soumyavani Pappu — Healthcare Product & Program Delivery</title>
+<meta name="description" content="Healthcare Business Analyst and Medical Project Manager with 10+ years in digital health, clinical decision support systems and pharmacovigilance.">
+<style>
+  :root{
+    --bg:#f6f8f7; --surface:#ffffff; --ink:#14232b; --muted:#5a6b73;
+    --brand:#0f766e; --brand-ink:#0b5a54; --accent:#e0f2ef; --line:#dce5e3;
+    --shadow:0 1px 2px rgba(20,35,43,.05),0 8px 24px rgba(20,35,43,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0d1619; --surface:#142126; --ink:#e8f0ee; --muted:#9db0b3;
+      --brand:#4fd1c2; --brand-ink:#7fe3d6; --accent:#12312f; --line:#233438;
+      --shadow:none;
+    }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:600;letter-spacing:-.01em;line-height:1.2}
+  a{color:var(--brand-ink)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+  nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  nav .brand{font-family:Georgia,serif;font-weight:600;text-decoration:none;color:var(--ink)}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav ul a{font-size:.9rem;text-decoration:none;color:var(--muted)}
+  nav ul a:hover{color:var(--brand)}
+  @media(max-width:700px){nav ul{display:none}}
+
+  .hero{padding:88px 0 64px}
+  .eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brand-ink);background:var(--accent);padding:6px 12px;border-radius:999px;margin-bottom:22px}
+  .hero h1{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:18px}
+  .hero p.lead{font-size:1.2rem;color:var(--muted);max-width:680px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--brand)}
+  .btn.primary{background:var(--brand);color:#fff}
+  .btn.ghost{color:var(--brand-ink);background:transparent}
+  @media(prefers-color-scheme:dark){.btn.primary{color:#062623}}
+  .meta{margin-top:26px;color:var(--muted);font-size:.92rem}
+
+  section{padding:64px 0;border-top:1px solid var(--line)}
+  section h2{font-size:1.9rem;margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:34px;max-width:640px}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+  .stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--shadow)}
+  .stat b{display:block;font-family:Georgia,serif;font-size:2.6rem;color:var(--brand);line-height:1}
+  .stat span{display:block;margin-top:10px;color:var(--muted);font-size:.92rem}
+
+  .about p{max-width:760px;margin-bottom:16px;font-size:1.05rem}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+  .card h3{font-size:1.15rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  .timeline{position:relative;margin-left:8px;padding-left:30px;border-left:2px solid var(--line)}
+  .job{position:relative;margin-bottom:38px}
+  .job::before{content:"";position:absolute;left:-39px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--brand);border:3px solid var(--bg)}
+  .job .when{font-size:.82rem;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+  .job h3{font-size:1.3rem;margin:4px 0 2px}
+  .job .org{color:var(--brand-ink);font-weight:600;font-size:.95rem;margin-bottom:10px}
+  .job p{color:var(--muted);margin-bottom:10px;max-width:760px}
+  .job ul{padding-left:20px;max-width:760px}
+  .job li{margin-bottom:6px}
+
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:var(--accent);color:var(--brand-ink);padding:8px 14px;border-radius:999px;font-size:.9rem;font-weight:500}
+  .chips-group{margin-bottom:26px}
+  .chips-group h3{font-size:1rem;margin-bottom:12px;color:var(--muted);font-family:system-ui,sans-serif;font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem}
+
+  .edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .edu .card small{color:var(--muted)}
+
+  .contact{text-align:center}
+  .contact .sub{margin-left:auto;margin-right:auto}
+  .contact .cta{justify-content:center}
+
+  footer{padding:28px 0 40px;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Soumyavani Pappu</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Healthcare Business Analyst · Medical Project Manager</span>
+    <h1>Turning clinical guidelines into digital tools clinicians can trust.</h1>
+    <p class="lead">10+ years delivering clinical decision support systems, digital health products and pharmacovigilance operations for medical organizations across the US and Europe.</p>
+    <div class="cta">
+      <a class="btn primary" href="#experience">View experience</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+    <p class="meta">Pune, Maharashtra, India</p>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="sub">Where clinical expertise meets product delivery.</p>
+    <p>I'm a healthcare product and program professional who leads provider-focused digital health initiatives: clinical workflows, AI-enabled process optimization, healthcare data standardization and cross-functional delivery.</p>
+    <p>I work alongside clinicians, product managers, developers and QA teams to translate clinical guidelines and business requirements into structured digital solutions, including clinical calculators, treatment pathways, medical databases and decision-support applications used by global medical associations and healthcare organizations.</p>
+    <p>Earlier in my career I worked in pharmacovigilance and drug safety, supporting adverse event reporting, safety documentation and regulatory-compliant medical review. I'm driven by building scalable healthcare technology that improves usability, operational efficiency and evidence-based decision-making.</p>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="wrap">
+    <h2>Impact at a glance</h2>
+    <p class="sub">Outcomes from my delivery and quality work.</p>
+    <div class="stats">
+      <div class="stat"><b>10+</b><span>years across digital health and drug safety</span></div>
+      <div class="stat"><b>30%</b><span>less manual review effort through AI-enabled medication database and score automation</span></div>
+      <div class="stat"><b>95%</b><span>on-time project delivery</span></div>
+      <div class="stat"><b>40%</b><span>faster editorial and QA turnaround, with accuracy and compliance maintained</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="wrap">
+    <h2>Expertise</h2>
+    <p class="sub">What I bring to a healthcare product team.</p>
+    <div class="grid">
+      <div class="card"><h3>Digital Health Product Delivery</h3><p>End-to-end execution of provider-facing mobile and web applications, clinical calculators, treatment pathways and medical databases.</p></div>
+      <div class="card"><h3>Clinical Decision Support</h3><p>Structuring guideline-based clinical content into workflows and decision-support tools aligned with evidence-based practice.</p></div>
+      <div class="card"><h3>Healthcare Data Standardization</h3><p>Coded clinical data implementation that supports interoperability readiness across systems.</p></div>
+      <div class="card"><h3>Agile Delivery &amp; Stakeholders</h3><p>Sprint planning, backlog tracking, requirement clarification and milestone coordination across product, engineering, QA and clinical teams.</p></div>
+      <div class="card"><h3>AI-enabled Workflow Automation</h3><p>Automating medication database and scoring workflows to reduce manual review and improve consistency.</p></div>
+      <div class="card"><h3>Pharmacovigilance &amp; Quality</h3><p>Adverse event review, safety narratives, regulatory-compliant reporting and audit-ready quality processes.</p></div>
+    </div>
+
+    <div style="margin-top:44px">
+      <div class="chips-group">
+        <h3>Clinical data standards</h3>
+        <div class="chips"><span class="chip">ICD-10</span><span class="chip">SNOMED CT</span><span class="chip">LOINC</span><span class="chip">ATC-DDD</span><span class="chip">MedDRA</span><span class="chip">WHO-DD</span></div>
+      </div>
+      <div class="chips-group">
+        <h3>Tools &amp; methods</h3>
+        <div class="chips"><span class="chip">JIRA</span><span class="chip">Agile / Scrum</span><span class="chip">Six Sigma Green Belt</span><span class="chip">Quality Reviews</span><span class="chip">Clinical Content Management</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <p class="sub">From medical editing and drug safety to leading digital health delivery.</p>
+
+    <div class="timeline">
+
+      <div class="job">
+        <div class="when">Feb 2025 – Present</div>
+        <h3>Medical Project Manager</h3>
+        <div class="org">Börm Bruckmeier Infotech · Pune</div>
+        <p>Leading delivery of provider-focused digital health initiatives for global medical organizations across US and European healthcare ecosystems.</p>
+        <ul>
+          <li>Manage end-to-end execution of clinical calculators, treatment pathways, medical databases and provider-facing mobile and web applications.</li>
+          <li>Lead AI-enabled Medication Database and Score Automation initiatives, reducing manual review effort by 30%.</li>
+          <li>Coordinate product, engineering, QA and clinical stakeholders for timely, quality-driven delivery.</li>
+          <li>Run Agile delivery in JIRA: sprint planning, backlog tracking, requirement clarification and milestones.</li>
+          <li>Support healthcare workflow design and coded clinical data implementation using ICD-10, SNOMED CT, LOINC and ATC-DDD.</li>
+          <li>Drive operational improvements that contributed to 95% on-time project delivery.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="when">Feb 2021 – Feb 2025</div>
+        <h3>Senior Medical Editor</h3>
+        <div class="org">Börm Bruckmeier Infotech · Pune</div>
+        <p>Owned delivery and quality governance of digital clinical content and decision-support solutions for global medical associations and healthcare platforms.</p>
+        <ul>
+          <li>Led clinical workflow structuring and content quality management for guideline-based healthcare applications.</li>
+          <li>Translated clinical guidelines into structured digital workflows and provider-facing tools with clinicians, developers, QA and product teams.</li>
+          <li>Supported development of clinical calculators, diagnostic tools and treatment pathways.</li>
+          <li>Applied ICD-10, SNOMED CT, LOINC and ATC-DDD to support standardized data capture and interoperability readiness.</li>
+          <li>Improved editorial and QA turnaround by 40% while maintaining medical accuracy and compliance.</li>
+          <li>Mentored junior team members and supported workflow standardization.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="when">Aug 2018 – Feb 2021</div>
+        <h3>Scientific and Medical Writer</h3>
+        <div class="org">Springer Nature Technology and Publishing Solutions · Pune</div>
+        <p>Supported global pharmacovigilance operations for international pharmaceutical clients.</p>
+        <ul>
+          <li>Reviewed biomedical literature for adverse event reporting and pharmacovigilance documentation.</li>
+          <li>Produced compliant safety narratives and structured reports for global safety databases and regulatory submissions.</li>
+          <li>Ensured adherence to MedDRA, WHO-DD and internal SOP frameworks, supporting audit readiness.</li>
+          <li>Performed quality reviews and mentored teammates on medical coding consistency and documentation standards.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="when">Oct 2015 – Jul 2018</div>
+        <h3>Medical Editor</h3>
+        <div class="org">Börm Bruckmeier Infotech · Pune</div>
+        <p>Supported development of digital healthcare applications and clinical decision-support tools for US and European medical organizations.</p>
+        <ul>
+          <li>Reviewed and structured clinical content for provider-facing applications and guideline platforms.</li>
+          <li>Contributed to clinical calculators, diagnostic checklists and treatment-support tools.</li>
+          <li>Supported medical coding implementation using ICD-10 and SNOMED CT.</li>
+          <li>Worked with cross-functional teams to ensure clinical accuracy, usability and consistency.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education &amp; certifications</h2>
+    <p class="sub">A pharmacy foundation with an operations management degree.</p>
+    <div class="edu">
+      <div class="card"><h3>MBA, Operations Management</h3><p>Savitribai Phule Pune University</p><small>2017 – 2019</small></div>
+      <div class="card"><h3>Bachelor of Pharmacy</h3><p>Indira College of Pharmacy, Pune</p><small>2011 – 2015</small></div>
+      <div class="card"><h3>Six Sigma Green Belt</h3><p>Process improvement certification</p></div>
+      <div class="card"><h3>Verified International Academic Qualifications</h3><p>Credential verification</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's connect</h2>
+    <p class="sub">Open to conversations about digital health, clinical decision support and healthcare product delivery.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:soumyavani@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/soumyavanipappu" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Soumyavani Pappu · Pune, India</div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
