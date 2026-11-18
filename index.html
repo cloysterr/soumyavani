@@ -82,6 +82,13 @@
   .contact .sub{margin-left:auto;margin-right:auto}
   .contact .cta{justify-content:center}
 
+  .resume-card{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:var(--shadow)}
+  .resume-card .file{display:flex;align-items:center;gap:16px}
+  .resume-card .icon{flex:none;width:48px;height:56px;border-radius:8px;background:var(--accent);color:var(--brand-ink);display:grid;place-items:center;font-size:.72rem;font-weight:700;letter-spacing:.06em}
+  .resume-card h3{font-size:1.15rem;margin-bottom:2px}
+  .resume-card small{color:var(--muted)}
+  .resume-card .cta{margin-top:0}
+
   footer{padding:28px 0 40px;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
 </style>
 </head>
@@ -96,6 +103,7 @@
       <li><a href="#expertise">Expertise</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -108,7 +116,7 @@
     <p class="lead">10+ years delivering clinical decision support systems, digital health products and pharmacovigilance operations for medical organizations across the US and Europe.</p>
     <div class="cta">
       <a class="btn primary" href="#experience">View experience</a>
-      <a class="btn ghost" href="#contact">Get in touch</a>
+      <a class="btn ghost" href="Soumyavani_Pappu_Resume.pdf" download>Download resume</a>
     </div>
     <p class="meta">Pune, Maharashtra, India</p>
   </div>
@@ -239,6 +247,26 @@
       <div class="card"><h3>Bachelor of Pharmacy</h3><p>Indira College of Pharmacy, Pune</p><small>2011 – 2015</small></div>
       <div class="card"><h3>Six Sigma Green Belt</h3><p>Process improvement certification</p></div>
       <div class="card"><h3>Verified International Academic Qualifications</h3><p>Credential verification</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="resume">
+  <div class="wrap">
+    <h2>Resume</h2>
+    <p class="sub">The full one-page resume, ready to share or print.</p>
+    <div class="resume-card">
+      <div class="file">
+        <div class="icon" aria-hidden="true">PDF</div>
+        <div>
+          <h3>Soumyavani Pappu — Resume</h3>
+          <small>PDF · 1 page · 47 KB</small>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="Soumyavani_Pappu_Resume.pdf" download>Download PDF</a>
+        <a class="btn ghost" href="Soumyavani_Pappu_Resume.pdf" target="_blank" rel="noopener">View online</a>
+      </div>
     </div>
   </div>
 </section>
